@@ -9,7 +9,8 @@ func main() {
 	dailyGoal = "Learn Go Fundamentals"
 
 	// Method 2: Short variable declaration (Inferred)
-	// Can only be used inside functions. Go "guesses" the type
+	// Can only be used inside functions.
+	// Stastically type. Go "guesses" the type and locked it in.
 	daysCompleted := 1
 	isCodingFun := true
 
@@ -18,6 +19,11 @@ func main() {
 		coffeeCups = 2
 		hoursSpent = 1.5
 	)
+
+	// Constant: Reassignment not allowed
+	// Constants cannot be declared using the := syntax.
+	const serverPort = 8000
+	const appName = "Agentic AI"
 
 	// Printing the results
 	fmt.Println("--- Day 1: Variables ---")
@@ -32,4 +38,11 @@ func main() {
 	// %f	Float	Decimal numbers (e.g., 1.500000)
 	// %.1f	Precision Float	Decimal number rounded to 1 decimal place (e.g., 1.5)
 	// \n	Newline	Moves the cursor to the next line (Enter key)
+
+	// Zero Values
+	var i int     // 0
+	var f float64 // 0
+	var b bool    // false
+	var s string  // ""
+	fmt.Printf("%v %v %v %q\n", i, f, b, s)
 }

@@ -11,5 +11,5 @@
 To run any of the daily lessons, navigate to the specific folder and use the Go run command:
 
 ```bash
-cd basics/01_variables
+cd basics/00_variables
 go run .
