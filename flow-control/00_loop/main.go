@@ -12,9 +12,14 @@ func main() {
 
 	fmt.Println((totalSum))
 
-	// Method 2: Modernised
+	// Method 2: Modernised Range Loop
 	for i := range 5 {
 		fmt.Println(i)
+	}
+
+	numsArr := []int{2, 4, 6, 8, 10}
+	for index, value := range numsArr {
+		fmt.Println("index ->", index, "value ->", value)
 	}
 
 	// While
